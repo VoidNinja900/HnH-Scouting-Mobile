@@ -1,6 +1,41 @@
 body {
-    background-image: url("HNHGearBack.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom left;
+
+    
   }
+  
+  div {
+    width: 100px;
+    height: 100px;
+    position: static;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;  
+  }
+
+  @keyframes GearSpin{
+    0% {left: 0px; top: 0px;}
+    25% {left: 200px; top: 0px;}
+    50% {left: 200px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+  }
+
+#gear
+{
+  width: 2000px;
+  height: 2000px;
+  position: absolute;
+  animation-name: gearSpin;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  z-index: -100;
+  left: 550px;
+  top: -400px;
+}
+
+@keyframes gearSpin {
+  0%   {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}
+  

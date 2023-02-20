@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-image:url("HNHGearBackDarkerGray.png");
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  
+}
+
+#gear
+{
+  width: 2000px;
+  height: 2000px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  z-index: -100;
+  left: 550px;
+  top: -400px;
+}
+
+#front
+{
+  transform: translateZ(100);
+  width: 150px;
+  height: 150px;
+  position: static;
+}
+
+img {
+-webkit-transform: rotate(0deg); 
+-moz-transform: rotate(0deg); 
+-ms-transform: rotate(0deg); 
+}
+
+
+
+
+
+@keyframes example {
+  0%   {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}
+</style>
+
+
+</head>
+<body onload="startMus()">
+
+<h1>CSS Animation</h1>
+
+<p>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. The following example uses the value "alternate-reverse" to make the animation run backwards first, then forwards:</p>
+<img id = "gear" src="Images/HNHGearBackDarkerGray.png" alt="Paris">
+<img id = "front" src="Images/HNHGearBackDarkerGray.png" alt="Paris" style="width:150px">
+<div></div>
+
+
+
+
+</body>
+</html>

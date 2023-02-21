@@ -1,37 +1,62 @@
-body {
-
-    
-  }
-  
-  div {
-    width: 100px;
-    height: 100px;
-    position: static;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: 2;
-    animation-direction: alternate-reverse;  
-  }
-
-  @keyframes GearSpin{
-    0% {left: 0px; top: 0px;}
-    25% {left: 200px; top: 0px;}
-    50% {left: 200px; top: 200px;}
-    75% {left: 0px; top: 200px;}
-    100% {left: 0px; top: 0px;}
-  }
-
 #gear
 {
-  width: 2000px;
-  height: 2000px;
-  position: absolute;
+  width: 1500px;
+  height: 1500px;
+  rotate: 40deg;
+  position: fixed;
   animation-name: gearSpin;
   animation-duration: 35s;
   animation-iteration-count: infinite;
   z-index: -100;
-  left: 550px;
-  top: -400px;
+  left: 950px;
+  top: 300px;
+}
+
+#LogoMain{
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  left: 1760px;
+  top: -6px;
+  position: fixed;
+}
+
+#VersionFont
+{
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #0093a7;
+}
+
+.active {
+  background-color: #04AA6D;
 }
 
 @keyframes gearSpin {

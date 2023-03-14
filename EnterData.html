@@ -115,32 +115,7 @@
     
     <body>
     
-        <script>function handleSubmit(event) {
-            event.preventDefault();
-            
-            
-          
-            const data = new FormData(event.target);
-          
-            const TeamNumber = data.get('Team#');
-            const MatchNumber = data.get('Match#');
-            const CubesConesBoth = data.get('CubesConesBoth');
-            const Nodes = data.get('Nodes');
-            const Wieght = data.get('Wieght');
-            const Speed = data.get('Speed');
-            const Gyro = data.get('Gyro');
-            const StartingPosition = data.get('StartingPosition');
-            const Docked = data.get('Docked');
-            const CubePoints = data.get('Cube Points');
-            const Fouls = data.get('Fouls');
-            const TotalPoints = data.get('Total Points');
-        
-          
-            console.log({ TeamNumber, MatchNumber, CubesConesBoth, Nodes, Wieght, Speed, Gyro, StartingPosition, Docked, CubePoints, Fouls, TotalPoints });
-          }
-          
-          const form = document.querySelector('form');
-          form.addEventListener('submit', handleSubmit);</script>
+        <script src = "ExportToJson.js"></script>
     <div>
     </div>
     </body>

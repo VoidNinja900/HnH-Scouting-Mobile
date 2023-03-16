@@ -1,9 +1,9 @@
-import { writeFile } from 'fs';
+
 function handleSubmit(event) {
     event.preventDefault();
-    
-    
   
+
+    //Data
     const data = new FormData(event.target);
   
     const TeamNumber = data.get('Team#');
@@ -19,16 +19,32 @@ function handleSubmit(event) {
     const Fouls = data.get('Fouls');
     const TotalPoints = data.get('Total Points');
 
+
     const value2 = Object.fromEntries(data.entries())
 
+
+    // Convert Data to json
     data2 = JSON.stringify(value2);
 
+
+    //Log values for debug
     console.log({ TeamNumber, MatchNumber, CubesConesBoth, Nodes, Wieght, Speed, Gyro, StartingPosition, Docked, CubePoints, Fouls, TotalPoints });
 
-    writeFile('afile' + "1" + ".json", data2, function (err) {
-        if (err) throw err;
-        console.log('Saved!');
-    }  )
+
+    //Create file to download
+    filename = TeamNumber+"-"+MatchNumber+".json"
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/json;charset=utf-8,' + encodeURIComponent(data2));
+    element.setAttribute('download', filename);
+  
+    element.style.display = 'none';
+    document.body.appendChild(element);
+  
+
+    //download file
+    element.click();
+  
+    document.body.removeChild(element);
     
     
   }

@@ -19,17 +19,9 @@
     </style>
 
 <form>
-    <label for="Team#">Team#</label><br>
-    <input type="number" id="Team#" name="Team#" >
-    
-    <br>
-    
-    <label for="Match#">Match#</label><br>
-    <input type="number" id="Match#" name="Match#">
-    
-    <br>
-    <br>
-    
+
+    <h1>Robot Details</h1>
+
     <input type="radio" id="Cubes" name="CubesConesBoth" value="Cubes">
     <label for="Cubes">Cubes</label><br>
     <input type="radio" id="Cones" name="CubesConesBoth" value="Cones">
@@ -50,21 +42,21 @@
     <br>
     <br>
     
-    <label for="Wieght">Weight</label><br>
-    <input type="number" id="Wieght" name="Wieght">
-    
-    <br>
-    <br>
-    
-    <label for="Speed">Speed</label><br>
-    <input type="number" id="Speed" name="Speed">
-    
-    <br>
-    <br>
-    
     <label for="Gyro">Gyro</label><br>
     <input type="checkbox" id="Gyro" name="Gyro">
     
+    <br>
+
+    <h1>Match Details</h1>
+
+    <label for="Team#">Team#</label><br>
+    <input type="number" id="Team#" name="Team#" >
+    
+    <br>
+    
+    <label for="Match#">Match#</label><br>
+    <input type="number" id="Match#" name="Match#">
+
     <br>
     <br>
 
@@ -79,11 +71,12 @@
     <br>
     <br>
 
+    <input type="radio" id="Docked" name="Docked" value="Docked">
     <label for="Docked">Docked</label><br>
-    <input type="checkbox" id="Docked" name="Docked">
+    <input type="radio" id="Engaged" name="Docked" value="Engaged">
+    <label for="Engaged">Engaged</label><br>
 
-    <br>
-    <br>
+    <h3>Auto</h3>
 
     <label for="Cube Points">Cube Points</label><br>
     <input type="number" id="Cube Points" name="Cube Points">
@@ -103,8 +96,31 @@
     <br>
     <br>
 
-    <label for="Total Points">Total Points</label><br>
-    <input type="number" id="Total Points" name="Total Points">
+    <label for="Auto Total Points">Total Points</label><br>
+    <input type="number" id="Auto Total Points" name="Total Points">
+
+    <h3>Teleop</h3>
+
+    <label for="Teleop Cube Points">Cube Points</label><br>
+    <input type="number" id="Teleop Cube Points" name="Cube Points">
+
+    <br>
+    <br>
+
+    <label for="Teleop Cone Points">Cone Points</label><br>
+    <input type="number" id="Teleop Cone Points" name="Cone Points">
+
+    <br>
+    <br>
+
+    <label for="Teleop Fouls">Fouls</label><br>
+    <input type="number" id="Teleop Fouls" name="Fouls">
+
+    <br>
+    <br>
+
+    <label for="Teleop Total Points">Total Points</label><br>
+    <input type="number" id="Teleop Total Points" name="Total Points">
 
     <br>
     <br>

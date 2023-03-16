@@ -8,16 +8,30 @@ function handleSubmit(event) {
   
     const TeamNumber = data.get('Team#');
     const MatchNumber = data.get('Match#');
+
     const CubesConesBoth = data.get('CubesConesBoth');
     const Nodes = data.get('Nodes');
-    const Wieght = data.get('Wieght');
-    const Speed = data.get('Speed');
     const Gyro = data.get('Gyro');
+
     const StartingPosition = data.get('StartingPosition');
+
     const Docked = data.get('Docked');
-    const CubePoints = data.get('Cube Points');
-    const Fouls = data.get('Fouls');
-    const TotalPoints = data.get('Total Points');
+
+    const AutoCubePoints = data.get('Cube Points');
+    const AutoConePoints = data.get('Cone Points');
+
+    const AutoFouls = data.get('Fouls');
+    const AutoTotalPoints = data.get('Auto Total Points');
+
+    const TeleopCubePoints = data.get('Teleop Cube Points');
+    const TeleopConePoints = data.get('Teleop Cone Points');
+
+    const TeleopFouls = data.get('Teleop Fouls');
+    const TeleopTotalPoints = data.get('Teleop Total Points');
+
+    
+
+
 
 
     const value2 = Object.fromEntries(data.entries())
@@ -28,7 +42,7 @@ function handleSubmit(event) {
 
 
     //Log values for debug
-    console.log({ TeamNumber, MatchNumber, CubesConesBoth, Nodes, Wieght, Speed, Gyro, StartingPosition, Docked, CubePoints, Fouls, TotalPoints });
+    console.log(JSON.stringify(value2));
 
 
     //Create file to download

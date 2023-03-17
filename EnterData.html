@@ -19,34 +19,6 @@
     </style>
 
 <form>
-
-    <h1>Robot Details</h1>
-
-    <input type="radio" id="Cubes" name="CubesConesBoth" value="Cubes">
-    <label for="Cubes">Cubes</label><br>
-    <input type="radio" id="Cones" name="CubesConesBoth" value="Cones">
-    <label for="Cones">Cones</label><br>
-    <input type="radio" id="Both" name="CubesConesBoth" value="Both">
-    <label for="Both">Both</label>
-    
-    <br>
-    <br>
-    
-    <input type="radio" id="1" name="Nodes" value="1">
-    <label for="1">1 Node</label><br>
-    <input type="radio" id="2" name="Nodes" value="2">
-    <label for="2">2 Nodes</label><br>
-    <input type="radio" id="3" name="Nodes" value="3">
-    <label for="3">3 Nodes</label>
-    
-    <br>
-    <br>
-    
-    <label for="Gyro">Gyro</label><br>
-    <input type="checkbox" id="Gyro" name="Gyro">
-    
-    <br>
-
     <h1>Match Details</h1>
 
     <label for="Team#">Team#</label><br>
@@ -60,6 +32,16 @@
     <br>
     <br>
 
+    <label for="Colour">Team Colour</label><br>
+    <input type="radio" id="Blue" name="Colour" value="Blue">
+    <label for="Colour">Blue</label><br>
+    <input type="radio" id="Red" name="Colour" value="Red">
+    <label for="Colour">Red</label><br>
+
+
+    <br>
+    <br>
+    
     <label for="L">StartingPosition</label><br>
     <input type="radio" id="L" name="StartingPosition" value="L">
     <label for="L">Left</label><br>
@@ -67,14 +49,6 @@
     <label for="M">Middle</label><br>
     <input type="radio" id="R" name="StartingPosition" value="R">
     <label for="R">Right</label>
-
-    <br>
-    <br>
-
-    <input type="radio" id="Docked" name="Docked" value="Docked">
-    <label for="Docked">Docked</label><br>
-    <input type="radio" id="Engaged" name="Docked" value="Engaged">
-    <label for="Engaged">Engaged</label><br>
 
     <h3>Auto</h3>
 
@@ -90,14 +64,10 @@
     <br>
     <br>
 
-    <label for="Fouls">Fouls</label><br>
-    <input type="number" id="Fouls" name="Fouls">
-
-    <br>
-    <br>
-
-    <label for="Auto Total Points">Total Points</label><br>
-    <input type="number" id="Auto Total Points" name="Auto Total Points">
+    <input type="radio" id="Docked (Auto)" name="Docked (Auto)" value="Docked">
+    <label for="Docked (Auto)">Docked</label><br>
+    <input type="radio" id="Engaged (Auto)" name="Docked (Auto)" value="Engaged">
+    <label for="Engaged (Auto)">Engaged</label>
 
     <h3>Teleop</h3>
 
@@ -113,14 +83,59 @@
     <br>
     <br>
 
+    <input type="radio" id="Docked (Teleop)" name="Docked (Teleop)" value="Docked">
+    <label for="Docked (Teleop)">Docked</label><br>
+    <input type="radio" id="Engaged (Teleop)" name="Docked (Teleop)" value="Engaged">
+    <label for="Engaged (Teleop)">Engaged</label>
+
+    <h2>Overall</h2>
+
+    <label for="Ranking Points">Ranking Points</label><br>
+    <input type="Ranking Points" id="Ranking Points" name="Ranking Points">
+
+    <br>
+    <br>
+
     <label for="Teleop Fouls">Fouls</label><br>
     <input type="number" id="Teleop Fouls" name="Teleop Fouls">
 
     <br>
     <br>
 
-    <label for="Teleop Total Points">Total Points</label><br>
-    <input type="number" id="Teleop Total Points" name="Teleop Total Points">
+    <label for="Red Score">Red Score</label><br>
+    <input type="number" id="Red Score" name="Red Score">
+
+    <br>
+    <br>
+
+    <label for="Blue Score">Blue Score</label><br>
+    <input type="number" id="Blue Score" name="Blue Score">
+
+
+    <h1>Robot Details</h1>
+
+    <input type="radio" id="Cubes" name="CubesConesBoth" value="Cubes">
+    <label for="Cubes">Cubes</label><br>
+    <input type="radio" id="Cones" name="CubesConesBoth" value="Cones">
+    <label for="Cones">Cones</label><br>
+    <input type="radio" id="Both" name="CubesConesBoth" value="Both">
+    <label for="Both">Both</label>
+
+    <br>
+    <br>
+
+    <input type="checkbox" id="1" name="Nodes" value="1">
+    <label for="1">1 Node</label><br>
+    <input type="checkbox" id="2" name="Nodes" value="2">
+    <label for="2">2 Nodes</label><br>
+    <input type="checkbox" id="3" name="Nodes" value="3">
+    <label for="3">3 Nodes</label>
+
+    <br>
+    <br>
+
+    <label for="Notes">Notes</label><br>
+    <textarea rows="4" cols="50" name="comments" style="resize: none;"></textarea>
 
     <br>
     <br>

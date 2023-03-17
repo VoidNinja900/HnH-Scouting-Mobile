@@ -3,31 +3,31 @@ function handleSubmit(event) {
     event.preventDefault();
   
 
-    //Data
+    //data
     const data = new FormData(event.target);
   
     const TeamNumber = data.get('Team#');
     const MatchNumber = data.get('Match#');
 
-    const CubesConesBoth = data.get('CubesConesBoth');
-    const Nodes = data.get('Nodes');
-    const Gyro = data.get('Gyro');
+    // const CubesConesBoth = data.get('CubesConesBoth');
+    // const Nodes = data.get('Nodes');
+    // const Gyro = data.get('Gyro');
 
-    const StartingPosition = data.get('StartingPosition');
+    // const StartingPosition = data.get('StartingPosition');
 
-    const Docked = data.get('Docked');
+    // const Docked = data.get('Docked');
 
-    const AutoCubePoints = data.get('Cube Points');
-    const AutoConePoints = data.get('Cone Points');
+    // const AutoCubePoints = data.get('Cube Points');
+    // const AutoConePoints = data.get('Cone Points');
 
-    const AutoFouls = data.get('Fouls');
-    const AutoTotalPoints = data.get('Auto Total Points');
+    // const AutoFouls = data.get('Fouls');
+    // const AutoTotalPoints = data.get('Auto Total Points');
 
-    const TeleopCubePoints = data.get('Teleop Cube Points');
-    const TeleopConePoints = data.get('Teleop Cone Points');
+    // const TeleopCubePoints = data.get('Teleop Cube Points');
+    // const TeleopConePoints = data.get('Teleop Cone Points');
 
-    const TeleopFouls = data.get('Teleop Fouls');
-    const TeleopTotalPoints = data.get('Teleop Total Points');
+    // const TeleopFouls = data.get('Teleop Fouls');
+    // const TeleopTotalPoints = data.get('Teleop Total Points');
 
     
 

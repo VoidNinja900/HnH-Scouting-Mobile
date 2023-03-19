@@ -21,6 +21,16 @@
   position: fixed;
 }
 
+#IDK{
+  width: 900px;
+  height: 300px;
+  z-index: 101;
+  left: 40px;
+  top: 600;
+  position: fixed;
+
+}
+
 #VersionFont
 {
   font-family: "Times New Roman", Times, serif;
